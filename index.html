@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>inshare</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section class="upload-container"> 
+        <div class="drop-zone">
+            <div class="icon-container">
+                <img src="icons/file.svg" alt="file icon" class="upload-icon">
+            </div>
+            <p>Drop your files here or <span class="browse-btn">browse</span></p>
+            <input type="file" id="fileInput" multiple hidden>
+        </div>
+        <div class="progress-container" hidden>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p class="progress-text">Uploading...</p>
+        </div>
+    </section>
     
+    <script src="script.js"></script>
 </body>
 </html>
